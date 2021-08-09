@@ -13,6 +13,13 @@ git:
 script:
   - yarn build
 
+notifications:
+  email:
+    recipients:
+      - diegospar2@hotmail.com
+    on_success: always
+    on_failure: always
+    
 deploy:
   provider: page
   skip-cleanup: true
